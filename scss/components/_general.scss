@@ -1,0 +1,58 @@
+h1 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.nombre {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.nos img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: solid 3px map-get($paleta_de_colores, secundario);
+    border-top-right-radius: 30px;
+}
+
+.centrar_texto {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+.fuente ul li {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+
+  .descripcion {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    height: auto;
+    background-color: map-get($colores_extra, naranja);
+    color: map-get($colores_extra, negro);
+    padding: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+  }
+
+  h2{
+    font-size: larger !important;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+  }
+
+  

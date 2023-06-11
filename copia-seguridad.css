@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Limelight", cursive;
+  }
+  
+  body {
+    background-color: rgb(248, 247, 243);
+    color: rgb(24, 24, 24);
+  }
+  
+  header {
+    grid-area: encabezado;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgb(248, 228, 147);
+    box-shadow: 0 3px 10px rgb(251, 201, 2);
+  }
+  
+  .nav {
+    grid-area: pie_de_pagina;
+  }
+  
+  .contenedor_principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "encabezado" "contenido_principal" "pie_de_pagina";
+  }
+  
+  .contenedor_main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    grid-area: contenido_principal;
+  }
+  
+  .contenedor_logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 120px;
+  }
+  
+  .navegacion {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  ul.navegacion li a {
+    text-decoration-line: none;
+    background-color: rgb(248, 228, 147);
+    padding: 5px;
+  }
+  
+  a:visited {
+    color: rgb(24, 24, 24);
+  }
+  
+  .navegacion li {
+    display: inline-block;
+  }
+  
+  h1 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .nombre {
+    text-align: center;
+    font-size: 4rem;
+  }
+  
+  .centrar_texto {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .galeria img {
+    width: 69%;
+    margin: 15px;
+    border: solid 3px rgb(248, 228, 147);
+    border-top-right-radius: 30px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: rgb(248, 228, 147);
+    box-shadow: 0 -3px 10px rgb(251, 201, 2);
+    align-items: center;
+  }
+  
+  .fuente ul li {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  p {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+  }
+  
+  .contenedor_formulario {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+  }
+  
+  .form div {
+    margin: 20px;
+  }
+  
+  .nos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nos img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: solid 3px rgb(248, 228, 147);
+    border-top-right-radius: 30px;
+  }
+  
+  .texto {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .texto div {
+    width: 50%;
+  }
+  
+  .carousel {
+    width: 80%;
+  }
+  
+  
+  .descripcion {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    height: auto;
+    background-color: rgba(238, 139, 9, 0.999);
+    color: black;
+    padding:10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+  }
+  
+  h2{
+    font-size: larger !important;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+  }
+  
+  
+  
+  .column {
+    float:left;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  
+  
+  @media screen and (min-width: 720px) {
+    header {
+      grid-area: encabezado;
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(248, 228, 147);
+      box-shadow: 0 3px 10px rgb(251, 201, 2);
+    }
+  
+    .contenedor_logo {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .nav {
+      width: 70%;
+    }
+  
+    .navegacion {
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .galeria img {
+      width: 30%;
+    }
+    .column {
+      width: 50%;
+    }
+    
+  }
+  
+  
+  
+  /*FIN DE TABLET*/
+  @media screen and (min-width: 1200px) {
+    .galeria img {
+      width: 30%;
+    }
+    
+    
+  }
+  
+  @media screen and (max-width: 720px) {
+    .carousel {
+      width: 100%;
+    }
+    .column {
+      width: 100%;
+    }
+  
+  }

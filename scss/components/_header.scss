@@ -1,0 +1,12 @@
+header {
+    grid-area: encabezado;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    background-color:map-get($paleta_de_colores
+    , secundario);
+    box-shadow: 0 3px 10px map-get($paleta_de_colores
+    , primario);
+
+}

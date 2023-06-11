@@ -1,0 +1,7 @@
+footer {
+    text-align: center;
+    background-color: map-get($paleta_de_colores, secundario);
+    box-shadow: 0 -3px 10px map-get($paleta_de_colores, primario);
+    align-items: center;
+}
+

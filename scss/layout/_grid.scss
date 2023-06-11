@@ -1,0 +1,19 @@
+.contenedor_principal {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "encabezado"
+                         "contenido_principal"
+                         "pie_de_pagina";
+}
+
+.contenedor_main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    grid-area: contenido_principal;
+}
