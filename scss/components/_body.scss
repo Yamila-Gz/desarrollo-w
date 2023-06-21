@@ -3,3 +3,12 @@ body {
     color: map-get($colores_extra, negro);
 }
 
+.contenedor_contactos {
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+}
+
+.contenedor_contactos p {
+    padding: 5px;
+}

@@ -192,6 +192,15 @@ h2{
   justify-content: center;
 }
 
+.contenedor_contactos{
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+}
+
+.contenedor_contactos p{
+  padding: 5px;
+}
 
 
 
@@ -233,6 +242,7 @@ h2{
     width: 50%;
   }
   
+  
 }
 
 
@@ -253,6 +263,7 @@ h2{
   .column {
     width: 100%;
   }
+ 
   
 }
 
