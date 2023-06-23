@@ -35,6 +35,13 @@
     width: 50%;
   }
 
+  .contenedor_contactos {
+    display: grid;
+
+    grid-template-rows: 3rem 10rem 3rem 10rem;
+    grid-template-columns: auto auto auto auto;
+
+  }
 }
 
 

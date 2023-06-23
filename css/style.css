@@ -53,9 +53,9 @@ main {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  padding:3rem;
+  padding: 3rem;
   margin: 0;
 }
 
@@ -162,20 +162,20 @@ p {
 
 
 .descripcion {
-  position:relative;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 35%;
   height: auto;
   background-color: rgba(238, 139, 9, 0.999);
   color: black;
-  padding:10px;
+  padding: 10px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: smaller;
 }
 
-h2{
+h2 {
   font-size: larger !important;
   text-align: center;
   margin: 30px;
@@ -185,23 +185,32 @@ h2{
 
 
 .column {
-  float:left;
+  float: left;
   width: 50%;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
 
-.contenedor_contactos{
+.contenedor_contactos {
   text-align: center;
   padding: 20px;
   margin: 5px;
 }
 
-.contenedor_contactos p{
+.contenedor_contactos p {
   padding: 5px;
 }
-
+.contenedor_contactos {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 3rem 10rem 3rem 10rem;
+  grid-template-columns: auto;
+  grid-area: "imagen"  
+              "mail"
+             "imagen"  
+             "telefono";
+}
 
 
 
@@ -238,8 +247,16 @@ h2{
   .galeria img {
     width: 30%;
   }
+
   .column {
     width: 50%;
+  }
+  .contenedor_contactos {
+    display: grid;
+    
+    grid-template-rows: 3rem 10rem 3rem 10rem;
+    grid-template-columns: auto auto auto auto;
+    
   }
   
   
@@ -252,19 +269,19 @@ h2{
   .galeria img {
     width: 30%;
   }
-  
-  
+
+
 }
 
 @media screen and (max-width: 720px) {
   .carousel {
     width: 100%;
   }
+
   .column {
     width: 100%;
   }
- 
   
-}
-
+  
+  }
 /*# sourceMappingURL=style.css.map */
