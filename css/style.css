@@ -254,9 +254,9 @@ h2 {
   .contenedor_contactos {
     display: grid;
     
-    grid-template-rows: 3rem 10rem 3rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem 10rem;
     grid-template-columns: auto auto auto auto;
-    
+    justify-content: center;
   }
   
   
