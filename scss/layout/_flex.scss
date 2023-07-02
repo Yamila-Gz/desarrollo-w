@@ -7,6 +7,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 100%;
+
+    transition: transform 0.3s ease;
 }
 
 .galeria img {
@@ -15,6 +18,12 @@
     border: solid 3px map-get($paleta_de_colores, segundario);
     border-top-right-radius: 30px;
 }
+
+.galeria img:hover {
+    transform: scale(1.2);
+}
+
+
 
 
 .contenedor_formulario {
@@ -40,7 +49,7 @@
     margin-bottom: 20px;
     border: solid 3px rgb(248, 228, 147);
     border-top-right-radius: 30px;
-  }
+}
 
 
 .texto {
@@ -53,7 +62,7 @@
 }
 
 
-.carousel{
+.carousel {
     @include ancho(80%);
 }
 
@@ -61,12 +70,12 @@
     display: flex;
     justify-content: center;
     width: 80%;
-  }
+}
 
-  .column {
-    float:left;
+.column {
+    float: left;
     width: 50%;
     padding: 20px;
     display: flex;
     justify-content: center;
-  }
+}
