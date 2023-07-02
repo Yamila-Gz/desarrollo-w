@@ -20,7 +20,7 @@ header {
     text-align: center;
     font-family: "Times New Roman", Times, serif;
     font-size: 14px;
-    color: white;
+    color: map-get($colores_extra, blanco);
     font-weight: bold;
     display: inline-block;
     width: auto;
@@ -45,6 +45,6 @@ header {
 
 .animacion {
     line-height: 20px;
-    background-color: black;
+    background-color: map-get($colores_extra, negro);
 
 }

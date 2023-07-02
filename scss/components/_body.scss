@@ -15,4 +15,8 @@ body {
 
 .imagen-achicada {
     max-width: 100%;
-  }
+}
+
+.entregas {
+    background-color: map-get($paleta_de_colores, secundario);
+}

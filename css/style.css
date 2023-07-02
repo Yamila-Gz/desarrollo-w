@@ -266,7 +266,9 @@ h2 {
 
 }
 
-
+.entregas{
+  background-color: rgb(248, 228, 147);
+}
 
 @media screen and (min-width: 720px) {
   header {
