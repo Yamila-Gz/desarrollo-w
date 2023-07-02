@@ -4,9 +4,47 @@ header {
     flex-direction: column;
     justify-content: start;
 
-    background-color:map-get($paleta_de_colores
-    , secundario);
-    box-shadow: 0 3px 10px map-get($paleta_de_colores
-    , primario);
+    background-color: map-get($paleta_de_colores , secundario);
+    box-shadow: 0 3px 10px map-get($paleta_de_colores , primario);
+
+}
+
+.contenedor_animacion {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+}
+
+.contenedor_animacion p {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    min-width: 100%;
+    height: fit-content;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+    animation: desplazamiento 20s linear infinite;
+
+}
+
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(0);
+        /* Desplazamiento inicial */
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animacion {
+    line-height: 20px;
+    background-color: black;
 
 }

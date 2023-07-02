@@ -92,10 +92,11 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 100%;
 }
 
 .galeria img {
-  width: 69%;
+  max-width: 70%;
   margin: 15px;
   border: solid 3px rgb(248, 228, 147);
   border-top-right-radius: 30px;
@@ -134,6 +135,15 @@ p {
   margin: 20px;
 }
 
+.contenedor_nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  height: fit-content;
+}
+
 .nos {
   display: flex;
   flex-wrap: wrap;
@@ -145,6 +155,7 @@ p {
   margin-bottom: 20px;
   border: solid 3px rgb(248, 228, 147);
   border-top-right-radius: 30px;
+  max-width: 100%;
 }
 
 .texto {
@@ -165,15 +176,25 @@ p {
   position: relative;
   bottom: 0;
   left: 0;
-  width: 35%;
+  max-width: 25%;
   height: auto;
-  background-color: rgba(238, 139, 9, 0.999);
+  background-color: rgb(251, 201, 2);
   color: black;
   padding: 10px;
-  text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: smaller;
+  text-align: center;
+
 }
+
+.column {
+  float: left;
+  max-width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 
 h2 {
   font-size: larger !important;
@@ -184,14 +205,6 @@ h2 {
 
 
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
 .contenedor_contactos {
   text-align: center;
   padding: 20px;
@@ -201,17 +214,57 @@ h2 {
 .contenedor_contactos p {
   padding: 5px;
 }
+
 .contenedor_contactos {
   display: grid;
   gap: 1rem;
   grid-template-rows: 3rem 10rem 3rem 10rem;
   grid-template-columns: auto;
-  grid-area: "imagen"  
-              "mail"
-             "imagen"  
-             "telefono";
+  grid-area: "imagen"
+    "mail"
+    "imagen"
+    "telefono";
 }
 
+.contenedor_animacion {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+
+.contenedor_animacion p {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
+  min-width: 100%;
+  height: fit-content;
+  vertical-align: middle;
+  margin-right: 1.5rem;
+  animation: desplazamiento 20s linear infinite;
+
+}
+
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(0);
+    /* Desplazamiento inicial */
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animacion {
+  line-height: 20px;
+  background-color: black;
+
+}
 
 
 
@@ -251,15 +304,16 @@ h2 {
   .column {
     width: 50%;
   }
+
   .contenedor_contactos {
     display: grid;
-    
+
     grid-template-rows: 10rem 10rem 10rem 10rem;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
   }
-  
-  
+
+
 }
 
 
@@ -268,6 +322,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   .galeria img {
     width: 30%;
+
   }
 
 
@@ -278,10 +333,9 @@ h2 {
     width: 100%;
   }
 
-  .column {
-    width: 100%;
-  }
-  
-  
-  }
+
+
+
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -35,12 +35,12 @@
     margin: 20px;
 }
 
-.nos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
+.nos img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: solid 3px rgb(248, 228, 147);
+    border-top-right-radius: 30px;
+  }
 
 
 .texto {
